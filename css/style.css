@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Raleway:wght@300;600;700&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+.text {
+  font-weight: 400;
+  opacity: 0.9;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+.featured-section,
+.service-section {
+  margin-top: 100px;
+}
+.logo {
+  color: #fff;
+  font-size: 2.4rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  opacity: 0.95;
+}
+.logo span {
+  font-weight: 300;
+}
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../img/header-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  height: 100vh;
+}
+header a {
+  color: #fff;
+  font-weight: 400;
+}
+.header-title {
+  align-items: center;
+}
+.header-title h1 {
+  font-size: 4rem;
+}
+.header-form {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 3rem;
+  border-radius: 0.2rem;
+}
+.header-form .form-control {
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4);
+  background-color: transparent;
+  font-family: "Raleway", sans-serif;
+  border-radius: 0.2rem;
+}
+.header-form input:not([type="submit"])::placeholder {
+  color: #ccc;
+}
+.header-form input[type="date"] {
+  text-transform: uppercase;
+  color: #ccc;
+}
+.btn {
+  padding: 0.7rem 2.4rem;
+  background: #1fb7a8;
+  border: transparent;
+  border-radius: 0.2rem;
+  color: #fff;
+  font-weight: 600;
+  display: inline-block;
+}
+.btn:hover {
+  background: #1fb7a8;
+}
+
+.title-wrap {
+  letter-spacing: 2px;
+}
+.sm-title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  line-height: 33px;
+  font-size: 19px;
+}
+.lg-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  line-height: 33px;
+  font-size: 29px;
+}
+.featured-item {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  text-transform: capitalize;
+}
+.featured-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 18%,
+    rgba(0, 0, 0, 0.8) 99%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+.featured-item-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  color: #fff;
+  width: 100%;
+  padding: 1rem;
+  transform: translateY(75%);
+  transition: all 0.5s ease;
+}
+.featured-item:hover .featured-item-content {
+  transform: translateY(10%);
+}
+.featured-item-content span {
+  font-size: 19px;
+}
+.service-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/img/services-bg.jpg) center/cover no-repeat;
+  height: 75vh;
+}
+.service-section .title-wrap {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.testimonial-section {
+  background: #f7f7f7;
+  padding-top: 100px;
+}
+.testimonial-section .text-row {
+  margin-bottom: 100px;
+}
+.text-item-info img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin: 1rem;
+}
+.text-row {
+  margin-top: 50px;
+}
+.text-row h3 {
+  font-size: 1rem;
+}
+.text-item {
+  background-color: #fff;
+  padding: 3rem 2rem 1rem;
+  position: relative;
+  border-radius: 0.2rem;
+}
+.text-item::after {
+  content: "";
+  position: absolute;
+  border: 20px solid #fff;
+  border-color: #fff transparent transparent transparent;
+  top: 100%;
+  left: 13%;
+}
+.video-wrapper {
+  height: 500px;
+  position: relative;
+}
+.video-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#play-btn {
+  position: absolute;
+  z-index: 5;
+  width: 70px;
+  height: 70px;
+  background-color: #1fb7a8;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  padding-left: 0.4rem;
+  transition: all 0.5s ease;
+}
+footer {
+  padding: 100px 0;
+  background: #0e1010;
+  color: #fff;
+}
+footer a {
+  color: #fff;
+}
+footer li:hover a {
+  color: #1fb7a8 !important;
+}
+.footer-item h2 {
+  font-size: 24px;
+}
+.subscribe-form form input[type="email"]::placeholder {
+  color: #fff;
+  opacity: 0.3;
+}
+.subscribe-form .form-control {
+  border-color: rgba(255, 255, 255, 0.3);
+  background: transparent;
+  border-radius: 0.2rem;
+}
+.subscribe-form form input {
+  width: 100%;
+  max-width: 300px;
+}
